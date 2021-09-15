@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CharacterListItem from './CharacterListItem';
+import CharacterListItem from '../characters/CharacterListItem';
 import { Link } from 'react-router-dom';
 
 const ListOfCharacters = ({ characters }) => (
