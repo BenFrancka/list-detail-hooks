@@ -23,7 +23,7 @@ describe('RAndMListContainer', () => {
       </MemoryRouter>
     );
 
-    screen.getAllByAltText('loading');
+    screen.getAllByAltText('loading spinner');
 
     const ul = await screen.findByRole('list', { name: 'character-list' });
     expect(ul).not.toBeEmptyDOMElement();
