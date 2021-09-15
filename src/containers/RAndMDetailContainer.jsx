@@ -24,12 +24,15 @@ const RAndMDetailContainer = () => {
           alt="loading spinner"
         />
       ) : (
-        <CharacterDetailDisplay {...character} />
+        <CharacterDetailDisplay
+          image={character.image}
+          name={character.name}
+          status={character.status}
+          species={character.species}
+        />
       )}
     </main>
   );
 };
 
 export default RAndMDetailContainer;
-
-
