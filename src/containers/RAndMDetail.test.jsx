@@ -26,9 +26,7 @@ describe('RAndMDetailContainer', () => {
 
     screen.getAllByAltText('loading spinner');
 
-    await screen.getAllByAltText('Morty Smith');
-
-    const ul = await screen.findByRole('list', { name: 'character-details' });
+    const ul = await screen.findByRole('list', { name: 'character details' });
     expect(ul).not.toBeEmptyDOMElement();
     expect(container).toMatchSnapshot();
   });
