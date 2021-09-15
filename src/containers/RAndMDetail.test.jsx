@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import { MemoryRouter } from 'react-router-dom';
-import RAndMDetailCotnaier from './RAndMDetailContainer';
+import RAndMDetailContainer from './RAndMDetailContainer';
 import DetailData from '../fixtures/DetailData.json';
 
 const server = setupServer(
@@ -20,7 +20,7 @@ describe('RAndMDetailContainer', () => {
   it('displays a detail view of a single Rick and Morty Character', async () => {
     const { container } = render(
       <MemoryRouter initialEntries={['/2']}>
-        <RAndMDetailCotnaier />
+        <RAndMDetailContainer />
       </MemoryRouter>
     );
 
